@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<title>CodeTheCode</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Calculatrice</h1>
+			<div class="screen">
+			</div>
+			<div class="">
+				
+			</div>
+			<div class="number">
+				<input type="button" value="7" onclick="(function(){screen.innerHTML += this.value}).call(this)">
+				<input type="button" value="8" onclick="(function(){screen.innerHTML += this.value}).call(this)">
+				<input type="button" value="9" onclick="(function(){screen.innerHTML += this.value}).call(this)">
+				<input type="button" value="4" onclick="(function(){screen.innerHTML += this.value}).call(this)">
+				<input type="button" value="5" onclick="(function(){screen.innerHTML += this.value}).call(this)">
+				<input type="button" value="6" onclick="(function(){screen.innerHTML += this.value}).call(this)">
+				<input type="button" value="1"onclick="(function(){screen.innerHTML += this.value}).call(this)">
+				<input type="button" value="2" onclick="(function(){screen.innerHTML += this.value}).call(this)">
+				<input type="button" value="3"onclick="(function(){screen.innerHTML += this.value}).call(this)">
+				<input type="button" value="0" onclick="(function(){screen.innerHTML += this.value}).call(this)">
+				<input type="button" name="float" value="." onclick="(function(){screen.innerHTML += this.value}).call(this)">
+						
+			</div>
+
+			<div class="operation">
+
+				<input type="button" class="eraser"value="CE" onclick="screen.innerHTML =''">
+				<input type="button" name="addition" value="+" onclick="(function(){screen.innerHTML += this.value}).call(this)">
+				<input type="button" name="soustraction" value="-" onclick="(function(){screen.innerHTML += this.value}).call(this)">
+				<input type="button" name="multiply" value="*" onclick="(function(){screen.innerHTML += this.value}).call(this)">
+				<input type="button" name="divider" value="&divide" onclick="(function(){screen.innerHTML += this.value}).call(this)">
+				<input type="button" name="modulo" value="%" onclick="(function(){screen.innerHTML += this.value}).call(this)">	
+				<input type="button" name="equality" value="=" onclick="screen.innerHTML = eval(screen.textContent)">		
+			</div>
+
+			<script type="text/javascript">
+				var screen = document.querySelector('.screen')
+			</script>		
+				
+		</div>
+	</body>
+</html>
